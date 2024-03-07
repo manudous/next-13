@@ -1,6 +1,11 @@
+import { Metadata } from "next";
 import { PokemonGrid } from "@/pokemons/components/PokemonGrid";
 import { PokemonsResponse, SimplePokemon } from "@/pokemons";
-import { notFound } from "next/navigation";
+
+export const metadata: Metadata = {
+  title: "151 Pokemons",
+  description: "151 Pokemons",
+};
 
 const getPokemons = async (
   limit = 20,
